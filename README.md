@@ -1,4 +1,4 @@
-# url_accessiblility_checker
+# url_access_checker
 
 A simple program that checks a list of URLs to see whether they are properly locked down or, on the contrary, properly accessible.
 
