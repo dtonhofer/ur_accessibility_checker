@@ -2,6 +2,12 @@
 
 A simple program that checks a list of URLs to see whether they are properly locked down or, on the contrary, properly accessible.
 
+This started with a smallish Perl script calling `curl` which rapidly became unmanageable due to lack of static typing and proper data structures.
+Dynamic typing, `hash` and `array` are nice for short scripts, but the complexity doesn't go magically away if you are pretendly "fast".
+Intially time "save" is spent later on debugging and having to re-think everything once you want to add functionality. More interestingly,
+if you are working with proper types and online linting provided by the IDE, you notice you have been much too optimistic with the scripting
+language and missed a lot of paths that you should have properly handled.
+
 - Based on Java 21.
 - Uses the rather simple [`java.net.HttpClient`](https://docs.oracle.com/en/java/javase/21/docs/api/java.net.http/java/net/http/HttpClient.html)
   to perform requests (rather than [Apache HTTPClient](https://hc.apache.org/httpcomponents-client-4.5.x/index.html) for example.)
