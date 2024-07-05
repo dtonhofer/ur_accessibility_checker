@@ -26,7 +26,7 @@ MACHINE=$2 # the host to test
 # where to find the elements
 
 CREDDIR="$HOME/creds"
-UBERJAR="$HOME/website_testing_uber.jar"
+UBERJAR="$HOME/url_access_checker-1.0.jar"
 
 # here we go; note that we switch on Java assertions with "-ea"
 
